@@ -7,7 +7,7 @@ const products = [
     price: 15.5,
     stock: 27,
     category: "Anestesias",
-    image: "images/articaina.jpg" // Usa tu propia imagen aquí
+    image: "images/anestesico1.jpg" // Usa tu propia imagen aquí
   },
   {
     id: 2,
@@ -16,7 +16,7 @@ const products = [
     price: 28.9,
     stock: 13,
     category: "Resinas",
-    image: "images/resina_a2.jpg"
+    image: "images/resina1.png"
   },
   {
     id: 3,
@@ -25,7 +25,7 @@ const products = [
     price: 6.5,
     stock: 40,
     category: "Instrumentos",
-    image: "images/espejo.jpg"
+    image: "images/anestesico2.jpg"
   },
   {
     id: 4,
@@ -34,7 +34,7 @@ const products = [
     price: 22.0,
     stock: 7,
     category: "Resinas",
-    image: "images/resina_b1.jpg"
+    image: "images/resina2.png"
   },
   {
     id: 5,
@@ -43,7 +43,7 @@ const products = [
     price: 10.0,
     stock: 31,
     category: "Anestesias",
-    image: "images/lidocaina.jpg"
+    image: "images/anestesico3.jpg"
   }
 ];
 
@@ -89,7 +89,7 @@ window.buyProduct = function(productId) {
 
   const message = `¡Hola! Quisiera comprar:\n- Producto: ${product.name}\n- Cantidad: ${amount}`;
   // Cambia el número por tu propio número de WhatsApp con código de país
-  const phone = "5215555551234";
+  const phone = "+59173033348";
   const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
   window.open(url, "_blank");
 };
