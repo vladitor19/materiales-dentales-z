@@ -17,6 +17,7 @@ h1 {
   margin-bottom: 28px;
   color: #1482e3;
   letter-spacing: 1px;
+  font-size: 2.1rem;
 }
 .controls {
   display: flex;
@@ -26,9 +27,9 @@ h1 {
   flex-wrap: wrap;
 }
 #searchBox, #categorySelect {
-  padding: 10px;
-  font-size: 17px;
-  border-radius: 6px;
+  padding: 13px;
+  font-size: 19px;
+  border-radius: 8px;
   border: 1px solid #bcdff4;
   background: #f4faff;
   min-width: 180px;
@@ -41,7 +42,7 @@ h1 {
 .product-card {
   background: #f5fbff;
   border-radius: 10px;
-  padding: 18px 14px;
+  padding: 22px 14px;
   box-shadow: 0 2px 10px rgba(20,130,227,0.09);
   display: flex;
   flex-direction: column;
@@ -52,44 +53,44 @@ h1 {
   box-shadow: 0 6px 16px rgba(20,130,227,0.13);
 }
 .product-card img {
-  max-width: 130px;
-  max-height: 130px;
-  margin-bottom: 14px;
+  max-width: 150px;
+  max-height: 150px;
+  margin-bottom: 16px;
   object-fit: contain;
-  border-radius: 5px;
+  border-radius: 8px;
   box-shadow: 0 2px 8px rgba(20,130,227,0.07);
   background: #e9f7fe;
 }
 .product-name {
   font-weight: 600;
-  margin: 10px 0 6px 0;
-  font-size: 19px;
+  margin: 14px 0 7px 0;
+  font-size: 1.25rem;
   color: #1271c3;
   text-align: center;
 }
 .product-desc {
-  font-size: 15px;
+  font-size: 1.06rem;
   color: #555;
   margin-bottom: 12px;
   text-align: center;
 }
 .product-price {
-  font-size: 17px;
+  font-size: 1.13rem;
   color: #1a7d1a;
   margin-bottom: 7px;
   font-weight: 500;
 }
 .product-stock {
-  font-size: 14px;
+  font-size: 1rem;
   color: #1a1a8d;
   margin-bottom: 7px;
 }
 .amount-input {
-  width: 65px;
-  padding: 5px;
-  font-size: 15px;
-  margin-bottom: 8px;
-  border-radius: 4px;
+  width: 75px;
+  padding: 7px;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  border-radius: 6px;
   border: 1px solid #bcdff4;
   text-align: center;
   background: #f4faff;
@@ -98,11 +99,11 @@ h1 {
   background: linear-gradient(90deg,#25d366 60%, #128c7e 100%);
   color: #fff;
   border: none;
-  border-radius: 6px;
-  padding: 9px 22px;
-  font-size: 16px;
+  border-radius: 7px;
+  padding: 12px 26px;
+  font-size: 1.13rem;
   cursor: pointer;
-  margin-top: 7px;
+  margin-top: 10px;
   transition: background 0.18s;
   box-shadow: 0 1px 4px rgba(37,211,102,0.11);
 }
@@ -112,27 +113,65 @@ h1 {
 footer {
   text-align: center;
   padding: 18px 0 8px 0;
-  font-size: 15px;
+  font-size: 1rem;
   color: #7ebbe6;
   background: transparent;
 }
-@media (max-width: 700px) {
+
+/* Mejoras para tablets y móviles */
+@media (max-width: 900px) {
   .container {
-    padding: 16px 4px;
-    max-width: 99vw;
+    padding: 10px 2vw;
+    max-width: 98vw;
   }
   #productsList {
     grid-template-columns: 1fr 1fr;
     gap: 18px;
   }
+  h1 {
+    font-size: 1.7rem;
+  }
 }
-@media (max-width: 500px) {
+
+@media (max-width: 600px) {
+  .container {
+    padding: 5vw 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .controls {
+    flex-direction: column;
+    gap: 14px;
+    align-items: stretch;
+    padding: 0 4vw;
+  }
   #productsList {
     grid-template-columns: 1fr;
-    gap: 15px;
+    gap: 22px;
+  }
+  .product-card {
+    padding: 22px 6vw;
+    border-radius: 10px;
   }
   .product-card img {
-    max-width: 90px;
-    max-height: 90px;
+    max-width: 95vw;
+    min-width: 120px;
+    max-height: 120px;
+  }
+  .buy-btn {
+    width: 100%;
+    font-size: 1.14rem;
+    padding: 15px;
+  }
+  .amount-input {
+    width: 100%;
+    font-size: 1.12rem;
+    padding: 9px;
+  }
+  h1 {
+    font-size: 1.3rem;
+  }
+  footer {
+    font-size: 0.95rem;
   }
 }
