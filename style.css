@@ -146,17 +146,17 @@ footer {
     padding: 0 4vw;
   }
   #productsList {
-    grid-template-columns: 1fr;
-    gap: 22px;
+    grid-template-columns: 1fr 1fr; /* SOLO 2 COLUMNAS EN MÓVIL */
+    gap: 18px;
   }
   .product-card {
-    padding: 22px 6vw;
+    padding: 22px 4vw;
     border-radius: 10px;
   }
   .product-card img {
     max-width: 95vw;
-    min-width: 120px;
-    max-height: 120px;
+    min-width: 90px;
+    max-height: 100px;
   }
   .buy-btn {
     width: 100%;
