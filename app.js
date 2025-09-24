@@ -69,7 +69,7 @@ const products = [
     description: "Son elementos intrarradiculares utilizados en odontología para proporcionar soporte y retención a las restauraciones dentales, especialmente en dientes que han sufrido una gran pérdida de estructura.",
     price: 170,
     stock: 3,
-    category: "Matrices Seccionales",
+    category: "Postes de fibra de vidrio",
     image: "images/PostesFibraDeVidrio.jpg"
   },
   {
